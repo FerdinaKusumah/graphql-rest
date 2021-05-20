@@ -1,0 +1,18 @@
+# import Post from './post.graphql'
+# import UserPost, User from './user.graphql'
+# import Comment from './comment.graphql'
+
+type Query {
+    # list user
+    users: [User!]!
+    # get specific user
+    user(id: ID!): User
+    # list posts
+    posts: [Post!]!
+    # get specific posts
+    post(id: ID!): Post
+    # get user with their posts
+    userPosts: [UserPost!]!
+    # comment api
+    comments: [Comment!]!
+}

@@ -1,0 +1,10 @@
+# import Post from './post.graphql'
+
+type Comment {
+    id: Int!
+    name: String!
+    email: String!
+    body: String!
+    postId: Int!
+    post: Post!
+}

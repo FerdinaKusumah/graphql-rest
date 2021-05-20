@@ -1,0 +1,9 @@
+# import User from './user.graphql'
+
+type Post {
+    id: Int!
+    title: String!
+    body: String!
+    userId: Int!
+    user: User!
+}

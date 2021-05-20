@@ -1,0 +1,42 @@
+# import Post from './post.graphql'
+
+type UserGeo {
+  lat: Float!
+  lng: Float!
+}
+
+type UserCompany {
+  name: String!
+  catchPhrase: String!
+  bs: String!
+}
+
+type UserAddress {
+  street: String!
+  suite: String!
+  city: String!
+  zipcode: String!
+  geo: UserGeo!
+}
+
+type User {
+  id: Int!
+  name: String!
+  username: String!
+  email: String!
+  phone: String!
+  website: String!
+  address: UserAddress!
+  company: UserCompany!
+}
+
+type UserPost {
+  id: Int!
+  name: String!
+  username: String!
+  email: String!
+  phone: String!
+  website: String!
+  address: UserAddress!
+  posts: [Post!]
+}
